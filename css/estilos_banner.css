@@ -1,0 +1,74 @@
+header {
+  width: 100vw;
+  height: 80vh;
+  background: var(--imagenDeFondo), center / cover, var(--degradadoBanner);
+  background-blend-mode: screen;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorFuente);
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+span {
+  width: 30vw;
+  position: absolute;
+  right: 0;
+  top: 10px;
+
+  padding: 1rem;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+span > img {
+  width: 40px;
+  height: 40px;
+  background: var(--fondoEstadoInicial);
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+}
+
+span > img:hover {
+  background: var(--fondoEstadoHover);
+}
+
+button {
+  width: 400px;
+  border: none;
+  background: var(--fondoEstadoInicial);
+  color: var(--colorFuente);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  padding: 1rem;
+  text-transform: capitalize;
+  transition: all 0.5s linear;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background: var(--fondoEstadoHover);
+  transform: translateY(10px);
+}

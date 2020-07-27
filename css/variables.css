@@ -1,0 +1,36 @@
+/* variables globales */
+:root {
+  /* colores de guía de estilos */
+  --colorPrimario: #0941bb;
+  --colorSecundario: #4fa2c8;
+
+  /* 
+  --colorPrimario: tomato;
+  --colorPrimario: tomato;
+  --colorSecundario: purple;
+  --colorPrimario: cyan;
+  --colorSecundario: darkblue;
+  --colorSecundario: purple;
+  */
+
+  /* variables para funetes */
+  --colorFuente: #fff;
+  --tipoFuente: "Poppins", sans-serif;
+  --tamanoFuente: 16px;
+
+  /* color de de fondo de pantalla */
+  --fondoPantalla: #fff;
+  /* --fondoPantalla: #000; */
+
+  /* variables de banner */
+  --imagenDeFondo: url("../imagenes/medico.jpg");
+  --degradadoBanner: linear-gradient(
+    to right,
+    var(--colorPrimario),
+    var(--colorSecundario)
+  );
+
+  /* variables de botones ó vínculos */
+  --fondoEstadoInicial: var(--colorSecundario);
+  --fondoEstadoHover: var(--colorPrimario);
+}

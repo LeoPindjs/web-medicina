@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Estilos de reseteo, de fuentes, y de paletas de colores  -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/mis_fuentes.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <!-- Fin Estilos de reseteo, de fuentes, y de paletas de colores -->
+
+    <!-- Estilos componentes -->
+    <link rel="stylesheet" href="./css/estilos_body.css" />
+    <link rel="stylesheet" href="./css/estilos_banner.css" />
+    <link rel="stylesheet" href="./css/estilos_footer.css" />
+    <!-- Fin de Estilos componentes -->
+
+    <title>MediGladys</title>
+  </head>
+  <body>
+    <!-- Mi Banner -->
+    <header>
+      <span>
+        Síguenos en :
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA20lEQVRIS2NkoDFgpLH5DIPLgu/fvyv8+fOnn5GR0QDocwWo7w/y8PA44AoJon0AMvzv37/ngQYJoBlGHQu+fPmyAGhwPBaXUs2CA0DD7UEW/P//fyMwqBIEBQU/EEokRAcR0Af/YYYBLWjk5eVtIGQ4SH5gLQC6OgGYYuShwYLs4gNAcVCQMfz79+8g0DdgNjaA1wdAC+DhjssAQsFFDQscKfHBBKDLQZkKBMApCAoeAukHUHYBMKNdICuIkDUNzVQ06oOBz8nDKw5wZSRC4kSXpoQMojgnk2sBAHWdlRnJOuAaAAAAAElFTkSuQmCC"
+        />
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABnElEQVRIS91VUW6CQBCVoCREScsNvEH1BLUnqD1B2xNIb1BOoDeoNyi9QW/Q9gTVE2ADhA9D6HsGzAK7gCb8uMkGwsybt/NmdtB6HS+t4/i9CyPwff/atu1dk2xRFM3TNF3Ab4a90TRtPRwOXeJow7uXxyhIFIbhBob5aDT6VpHAx4FtKbETM8F+Bn5dIQCQxi/sHU73YFnWZzlIHMfjJEl+azIkyQ/2Kj/kMQPKMxgMfAG81nXdNU2TWR1WJs17DcEfZRMVKEvEU9+KAZCNB409PKn1VCHPAQKfD2Q+F/GFDAzDmMGJ+l3VnFJpAtYFwauSoCTRORwvkGclJeBHFLoi0Yks03IHFmqQdQl7+ObEwHTfIvi4jKuMiiAIZnBaoKCFYrUgrMhDTIUAMj3h+1uLgKLLdr/fT2RTQDrsQMJCcRS0WuieO9nFlGaQR8zqwZZ7bGApjIbGGmTdxLHBDCiXavHWOuLckTkeJcqK66C490268Mb2+31HHCMqjKrI7CRmkbcrBxjHuIf55LUJnBNe2B+tSftz7J1L9A9V+KEZ/jRiGwAAAABJRU5ErkJggg=="
+        />
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB4ElEQVRIS8WV/VECMRDFSQVCBUIHdAB0gBV4VKBUIFagViBWIB14VgBWIB2IFZzvl9kwISSc/zBkZufysbvv7W425zpnHu7M/juXB2iaZqwobyVDE4LemLw55+pTWShGIMd9Gb5KAPg1h8EZYOxfSdibCwjQo5EFkHMcfEg4f5bxImcsvYpzSSO5yUVzBCCjrpS/jfW0xCwAWqQrra8lk1Q/B4Ay4Y9RNsCu5ttcFOyZDudr6U1ivQMAS81aCo+kxdix3mk9KAEYCOmiZqQKkn6kAOTzTtKT0k4A95o/me5Me8sWkJ3OV9IDLAtQe1TnxsYqBjhglgMSIQiM4mjTCLZSqAMDSxEFJ0W9U+yN0ELfB+nu/eYANjqfBmdRmpban7WkqBXgIEURCKHTzXznkr6EglLMF+plEbAeas25H6UiD9JrqUjCBcAZEpz4G2cArUXGiJzvjeKU2LuEs5Ht84SEfqksKpqtzkZgLPxhuEkxQJhb8SFDvbjOzOmXr9Qu18m8K+SVK9o6rDmpB43oo4mN0hpwe94lFPIHA8nWAH0hoyh4s2hKiODnyDm6pSLnmNcGBlB4rtH7lFSltyoFIDwY44yG47HrG0ucMod5+OHwLKBbHJf/ZZ5i95+zs0fwB+4c6BkTiCwGAAAAAElFTkSuQmCC"
+        />
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABU0lEQVRIS2NkoDFgpLH5DBgWfP/+XQlo6T9OTs4H1LAcxYKvX79O+v//fy7U4F4eHp4SSi2BW/Dp0yd1JiamG8gGMjMzKwB98pASS+AW/PjxQ/3Pnz8oFvz+/VtRUFCQoqBCCaLPnz9PZWRkzIK6eAIwiAopcT1IL0YkA4NKjY2N7R8HB8cdSg3HsADoAweg4H+wBCPjR6APLoDYX758MQBGPj+y+Pv37wVYWFj0gfEG0nMBSF/ElvJQfAA0CGw4FBwEWgDSDLLgAJCyh4kDLWsAOmA9kC+A7EugWAM3N3cjihgyh0gLQJEOMhjFcJg5QMsdeXl5QQ4CA3J8gOwmDDbQgo1ACwIosgDZEKCvE4CGzUey6QEwaBUpsgCo2RCWAKBx9AFIgxMBCADl4CFDVhAhGwC1ABTmsEQwagFqGI8GkQOhICAkT/86GW85QIYkzX0AAEcW4BnNcZ/SAAAAAElFTkSuQmCC"
+        />
+      </span>
+      <p>Cuida Tu Salud</p>
+      <h1>Medicina para todos</h1>
+      <button>consulta nuestros planes</button>
+    </header>
+    <!-- Fin de Mi Banner -->
+
+    <!-- contenidos  de la web -->
+    <!-- <main>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum omnis nisi
+      ab nobis officiis! Voluptatem architecto tempora reprehenderit debitis
+      magni temporibus magnam libero, minus aut fugit tenetur repellendus
+      dolorum ab? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Autem, suscipit. Aspernatur recusandae ipsum iusto provident possimus non
+      eaque sint vitae, eum minima tenetur quae consequatur reprehenderit
+      officia temporibus rem nemo?
+    </main> -->
+    <!-- Fin de contenidos de la web -->
+
+    <!-- Mi footer -->
+    <footer>
+      <section class="logo_y_redes_sociales">
+        <section class="logo">
+          <h2>
+            Medi
+            <div>Gladys</div>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+            expedita beatae! Consectetur, sunt!
+          </p>
+        </section>
+        <section class="redes_sociales">
+          <h2>Nuestras Redes</h2>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA20lEQVRIS2NkoDFgpLH5DIPLgu/fvyv8+fOnn5GR0QDocwWo7w/y8PA44AoJon0AMvzv37/ngQYJoBlGHQu+fPmyAGhwPBaXUs2CA0DD7UEW/P//fyMwqBIEBQU/EEokRAcR0Af/YYYBLWjk5eVtIGQ4SH5gLQC6OgGYYuShwYLs4gNAcVCQMfz79+8g0DdgNjaA1wdAC+DhjssAQsFFDQscKfHBBKDLQZkKBMApCAoeAukHUHYBMKNdICuIkDUNzVQ06oOBz8nDKw5wZSRC4kSXpoQMojgnk2sBAHWdlRnJOuAaAAAAAElFTkSuQmCC"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABnElEQVRIS91VUW6CQBCVoCREScsNvEH1BLUnqD1B2xNIb1BOoDeoNyi9QW/Q9gTVE2ADhA9D6HsGzAK7gCb8uMkGwsybt/NmdtB6HS+t4/i9CyPwff/atu1dk2xRFM3TNF3Ab4a90TRtPRwOXeJow7uXxyhIFIbhBob5aDT6VpHAx4FtKbETM8F+Bn5dIQCQxi/sHU73YFnWZzlIHMfjJEl+azIkyQ/2Kj/kMQPKMxgMfAG81nXdNU2TWR1WJs17DcEfZRMVKEvEU9+KAZCNB409PKn1VCHPAQKfD2Q+F/GFDAzDmMGJ+l3VnFJpAtYFwauSoCTRORwvkGclJeBHFLoi0Yks03IHFmqQdQl7+ObEwHTfIvi4jKuMiiAIZnBaoKCFYrUgrMhDTIUAMj3h+1uLgKLLdr/fT2RTQDrsQMJCcRS0WuieO9nFlGaQR8zqwZZ7bGApjIbGGmTdxLHBDCiXavHWOuLckTkeJcqK66C490268Mb2+31HHCMqjKrI7CRmkbcrBxjHuIf55LUJnBNe2B+tSftz7J1L9A9V+KEZ/jRiGwAAAABJRU5ErkJggg=="
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB4ElEQVRIS8WV/VECMRDFSQVCBUIHdAB0gBV4VKBUIFagViBWIB14VgBWIB2IFZzvl9kwISSc/zBkZufysbvv7W425zpnHu7M/juXB2iaZqwobyVDE4LemLw55+pTWShGIMd9Gb5KAPg1h8EZYOxfSdibCwjQo5EFkHMcfEg4f5bxImcsvYpzSSO5yUVzBCCjrpS/jfW0xCwAWqQrra8lk1Q/B4Ay4Y9RNsCu5ttcFOyZDudr6U1ivQMAS81aCo+kxdix3mk9KAEYCOmiZqQKkn6kAOTzTtKT0k4A95o/me5Me8sWkJ3OV9IDLAtQe1TnxsYqBjhglgMSIQiM4mjTCLZSqAMDSxEFJ0W9U+yN0ELfB+nu/eYANjqfBmdRmpban7WkqBXgIEURCKHTzXznkr6EglLMF+plEbAeas25H6UiD9JrqUjCBcAZEpz4G2cArUXGiJzvjeKU2LuEs5Ht84SEfqksKpqtzkZgLPxhuEkxQJhb8SFDvbjOzOmXr9Qu18m8K+SVK9o6rDmpB43oo4mN0hpwe94lFPIHA8nWAH0hoyh4s2hKiODnyDm6pSLnmNcGBlB4rtH7lFSltyoFIDwY44yG47HrG0ucMod5+OHwLKBbHJf/ZZ5i95+zs0fwB+4c6BkTiCwGAAAAAElFTkSuQmCC"
+          />
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABU0lEQVRIS2NkoDFgpLH5DBgWfP/+XQlo6T9OTs4H1LAcxYKvX79O+v//fy7U4F4eHp4SSi2BW/Dp0yd1JiamG8gGMjMzKwB98pASS+AW/PjxQ/3Pnz8oFvz+/VtRUFCQoqBCCaLPnz9PZWRkzIK6eAIwiAopcT1IL0YkA4NKjY2N7R8HB8cdSg3HsADoAweg4H+wBCPjR6APLoDYX758MQBGPj+y+Pv37wVYWFj0gfEG0nMBSF/ElvJQfAA0CGw4FBwEWgDSDLLgAJCyh4kDLWsAOmA9kC+A7EugWAM3N3cjihgyh0gLQJEOMhjFcJg5QMsdeXl5QQ4CA3J8gOwmDDbQgo1ACwIosgDZEKCvE4CGzUey6QEwaBUpsgCo2RCWAKBx9AFIgxMBCADl4CFDVhAhGwC1ABTmsEQwagFqGI8GkQOhICAkT/86GW85QIYkzX0AAEcW4BnNcZ/SAAAAAElFTkSuQmCC"
+          />
+        </section>
+      </section>
+      <section class="boletin_informativo_navegacion_servicios_horarios">
+        <section class="boletin_informativo">
+          <h2>Boletin informativo</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+            recusandae quod illo totam quaerat fuga sed fugiat neque sapiente
+            accusamus. Nihil, fugiat in dolore dolorum deserunt atque omnis
+            distinctio mollitia?
+          </p>
+          <form action="">
+            <input type="email" placeholder="Ingresa Un correo" /><input
+              type="button"
+              value="regístrate"
+            />
+          </form>
+        </section>
+        <section class="navegacion_servicio_horarios">
+          <section class="navegacion">
+            <h2>Información</h2>
+            <ul>
+              <li>
+                <a href="#inicio">Inicio</a>
+              </li>
+              <li>
+                <a href="#somos">Quienes somos</a>
+              </li>
+              <li>
+                <a href="#servicio">Servicios</a>
+              </li>
+              <li>
+                <a href="#blog">Blog</a>
+              </li>
+              <li>
+                <a href="#contacto">Contaćto</a>
+              </li>
+            </ul>
+          </section>
+          <section class="servicios">
+            <h2>Servicios</h2>
+            <ul>
+              <li>
+                <a href="#general">Medicina General</a>
+              </li>
+              <li>
+                <a href="#odontología">Odontología</a>
+              </li>
+              <li>
+                <a href="#dermatología">Dermatología</a>
+              </li>
+              <li>
+                <a href="#cardiología">Cardiología</a>
+              </li>
+              <li>
+                <a href="#neurología">Neurología</a>
+              </li>
+            </ul>
+          </section>
+          <section class="especialistas">
+            <h2>Especialistas</h2>
+            <ul>
+              <li>
+                <a href="#general">Medicina General</a>
+              </li>
+              <li>
+                <a href="#odontología">Odontología</a>
+              </li>
+              <li>
+                <a href="#dermatología">Dermatología</a>
+              </li>
+              <li>
+                <a href="#cardiología">Cardiología</a>
+              </li>
+              <li>
+                <a href="#neurología">Neurología</a>
+              </li>
+            </ul>
+          </section>
+          <section class="horarios">
+            <h2>Horarios</h2>
+            <ul>
+              <li>
+                Lunes de 9:00 am a 5 pm
+              </li>
+              <li>
+                Martes de 9:00 am a 5 pm
+              </li>
+              <li>
+                Miercoles de 9:00 am a 5 pm
+              </li>
+              <li>
+                Jueves de 9:00 am a 5 pm
+              </li>
+              <li>
+                Viernes de 9:00 am a 5 pm
+              </li>
+              <li>
+                Sabado y Domingo Cerrado
+              </li>
+            </ul>
+          </section>
+        </section>
+      </section>
+    </footer>
+    <section class="derechos_reservados">
+      © 2020 Todos los derechos reservados MediGladys | Diseñado por : Gladys
+      Pineda.
+    </section>
+    <!-- Fin de Mi footer -->
+  </body>
+</html>

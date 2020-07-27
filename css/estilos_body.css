@@ -1,0 +1,15 @@
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: var(--fondoPantalla);
+  font-size: var(--tamanoFuente);
+  font-family: var(--tipoFuente);
+  color: var(--colorFuente);
+}
+main {
+  color: #555555;
+  border: 1px solid red;
+  //padding: 2rem;
+  margin: 2rem;
+}
